@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="video player.css" />
+  </head>
+  <body>
+    <div class="video-container">
+      <video id="video" width="750" height="500" controls>
+        <source src="Marvel_Studios_The_Marvels_Official_Trailer_wS_qbDztgVY_136.mp4" type="video/mp4" />
+        <source src="Marvel_Studios_The_Marvels_Official_Trailer_wS_qbDztgVY_136.mp4" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="controls">
+        <button id="play-pause">Play</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="stopBtn">Stop</button>
+        <input type="range" id="volume" min="0" max="1" step="0.1" />
+        <button id="full-screen">Full-Screen</button>
+        <span id="time">00:00 / 00:00</span>
+
+        <div id="video-controls">
+            <div id="progress-bar">
+            <div id="progress"></div>
+            </div>
+            <span id="timestamp">00:00 / 00:00</span>
+        </div>
+    </div>
+
+    <button id="togglePlayPauseBtn">Play</button>
+       
+    <script src="script.js"></script>
+  </body>
+</html>
